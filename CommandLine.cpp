@@ -54,7 +54,11 @@ bool CommandLine::update()
 
                     // Find the first matching command and invoke callback.
                     for (int i = 0; i < this->commands.index; i++) {
+						#ifdef COMMANDLINE_CASE_INSENSITIVE
+                        if (strncasecmp(split, this->commands.items[i]->command, length) == 0) {
+						#else
                         if (strncmp(split, this->commands.items[i]->command, length) == 0) {
+						#endif
                             if (strlen(this->commands.items[i]->command) == length) {
                                 this->commands.items[i]->callback(&this->input.buffer[this->input.index]);
                                 success = true;

@@ -24,6 +24,9 @@
 // Add support for pre and post command execution.
 #define COMMANDLINE_PRE_POST
 
+// Add support for case insensitive comamnds.
+#define COMMANDLINE_CASE_INSENSITIVE
+
 // Keycode defines.
 #define KEYCODE_BACKSPACE 8
 #define KEYCODE_TAB 9

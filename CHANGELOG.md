@@ -1,6 +1,12 @@
 # Changelog
 
 ## v2.1.0
+Released 01 September 2016
+
+Highlights:
+* Added: optional support for case insensitive commands
+
+## v2.1.0
 Released 02 August 2015
 
 Highlights:

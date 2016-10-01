@@ -1,8 +1,8 @@
-# CommandLine v2.1.0
+# CommandLine v2.1.1
 No-nonsense serial command line interpreter for Arduino.
 
 ## Installation
-* [Download](https://github.com/basilfx/Arduino-CommandLine/archive/master.zip) or clone this repository to `Arduino/libraries/CommandLine`.
+* [Download](https://github.com/pmachapman/Arduino-CommandLine/archive/master.zip) or clone this repository to `Arduino/libraries/CommandLine`.
 * Restart Arduino IDE.
 * Check the examples.
 
@@ -19,6 +19,7 @@ Basic support for history is added in version 2.1.0.
 This library shouldn't be the biggest part of your flash and/or memory footprint. Therefore, several parameters and functions that can be toggled or modified to improve memory usage. Just define them before `CommandLine.h` is included.
 
 * `COMMANDLINE_BUFFER` &mdash; number of characters to buffer for one line. Default is 32 characters.
+* `COMMANDLINE_CASE_INSENSITIVE` &mdash; if defined, enable support for case-insensitive commands.
 * `COMMANDLINE_COUNT` &mdash; number of commands that can be added or remove (including on-the-fly ones). Default is 8.
 * `COMMANDLINE_PRE_POST` &mdash; if defined, enable support for pre and post callback.
 * `COMMANDLINE_HISTORY` &mdash; number of commands to keep in history (for up/down key support). Default is 2.
